@@ -16,6 +16,10 @@ body{
     color: grey;
     font-size: 1rem;
 }
+.features-grid-section p{
+    margin: 0;
+    padding: 0;
+}
 .features-grid{
     
     height: 1050px;
@@ -23,7 +27,7 @@ body{
 }
 .text-why{
     text-align: center;
-    padding-top: 60px ;
+    padding-top: 50px ;
     color: #ffffff;
     font-size: 2.5rem;
     
@@ -74,24 +78,120 @@ body{
 .headphone-grid{
     border: none;
 }
+.features-showcase{
+    height: 1277px;
+    background-color: #1A0B2E;
+   margin-top: -55px;
+}
+.features-showcase-titel{
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 100px;
+}
+.video-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     max-width: 1200px;
+     margin: 0 auto;
+}
+.video{
+    width: 380px;
+}
+.container-title{
+    width: 270px;
+    font-size: 1.2rem;
+}
+.container-dep{
+    width: 332px;
+}
+.video-container{
+    width: 380px;
+    background-color:rgba(53, 17, 101, 0.4);
+    border-radius: 20px;
+}
+.video-container h5{
+    color: #00FF88;
+    display: flex;
+    align-items: center;
+    gap: 4px;  
+}
+.video-container h3 , p , h5 {
+    padding-left: 24px;
+}
+.text-meet{
+    text-align: center;
+    font-size: 4rem;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+}
+.container-footer{
+    display: flex;
+    gap: 24px;
+    padding: 48px 40px;
+    width: 1200px;
+    border: none;
+    background-color:rgba(53, 17, 101, 0.4);
+    border-radius: 50px;
+}
+.text-tech{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.profile-img-link{
+    display: flex;
+    gap: 14px;
+}
+.icon{
+   padding: 15px;
+   border-radius: 50%;
+   border: 1px solid rgba(83, 60, 114, 1);  
+}
+.icon img{
+   width: 20px;
+    height: 20px;
+}
+.text-alex{
+    font-size: 2rem;
+   margin-top: 10px;
+   
+}
+
+
 @media screen  and  (max-width:576px) {
     .features-grid-section{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     gap: 16px;
-    
+    }
+    .features-showcase{
+     height: 100%;
+    }
+    .video-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px;
+    gap: 16px;
     }
     .section1{
-       width: auto;
+    width: auto;
     }
     .section1 img{
     margin-top:24px;
 }
-    .section1 p{
-      
-    }
     .features-grid{
         height: 100%;
+    }
+     .container-footer{
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+        border-radius: 30px;
+    }
+    .profile-img-link{
+     justify-content: center;
     }
 }
