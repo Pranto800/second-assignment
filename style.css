@@ -16,6 +16,15 @@ body{
     color: grey;
     font-size: 1rem;
 }
+.text-wave{
+  background: linear-gradient(
+  90deg,
+  #F7E93F 0%,
+  #FB09B4 51%,
+  #9100F8 100%);
+  background-clip: text;
+  color: transparent;
+}
 .btn{
   background: linear-gradient(
   30deg,
@@ -25,6 +34,45 @@ body{
   border: none;
   padding: 12px 20px 12px 20px;
   border-radius: 10000px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 92px;
+    background-color: #1A0B2E;
+    padding-top: 36px;
+}
+.display{
+    display: none;
+}
+.header h2{
+    font-size: 2.5rem;
+    margin: 0;
+}
+.list{
+    display: flex;
+    gap: 32px;
+    color: #ffffff;
+    font-size: 1rem;
+    list-style: none;
+     padding-top: 15px;
+}
+.Subscribe-button{
+    width: 135px;
+    height: 44px;
+    display: flex;
+    gap: 4px;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.header h2 , ul , button{
+    margin-top: 10px;
+}
+.line{
+    border: 0.1px solid  rgb(52, 49, 49);
+    width: auto;
 }
 .hero-circle{
   background-image: url(./assets/hero-bg.png);
@@ -111,7 +159,7 @@ body{
 .text-join{
     padding-top: 20px;
 }
-hr{
+.hr{
     width: 1200px;
     height: 1px;
     margin-top: 80px;
@@ -297,15 +345,6 @@ hr{
     margin-bottom: 10px;
     margin-top: 110px;
 }
-.text-wave{
-  background: linear-gradient(
-  90deg,
-  #F7E93F 0%,
-  #FB09B4 51%,
-  #9100F8 100%);
-  background-clip: text;
-  color: transparent;
-}
 .footer-container{
     display: grid;
     justify-content: center;
@@ -325,7 +364,36 @@ hr{
     align-items: center;
     gap: 8px;
 }
+.footer{
+  background-image: url(./assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width:1600px ;
+  height: 412px;
+}
+
 @media screen  and  (max-width:576px) {
+    .header ul , .Subscribe-button{
+        display: none;
+    }
+    .header{
+        justify-content:space-between;
+    }
+    .header h2{
+    font-size: 2rem;
+    padding-left: 10px;
+    }
+    .fa-bars{
+        width: 24px;
+        height: 24px;
+        color: #ffffff;
+        font-size: 1.3rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-right: 10px;
+    }
      .hero-circle{
    background-image: url(./assets/Header1.png);
    background-repeat: no-repeat;
@@ -367,7 +435,7 @@ hr{
     margin: 0;
     padding-top: 11px
    }
-   hr{
+   .hr{
     width: auto;
    }
   .number {
@@ -412,17 +480,38 @@ hr{
     .profile-img-link{
      justify-content: center;
     }
-    .footer-banner{
-        display: grid;
-        grid-template-columns: repeat(2,150px);
-        gap: 0;
-        
+   .footer-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 12px;
+    justify-content: center;
+    margin-left: 70px;
+  }
+  
+  .footer-icon{
+    gap:6px;
+  }
+  .img4 , .img5{
+  margin-top: -15px;
+  }
+    .footer-titel{
+        font-size: 2rem;
+        margin-top: 30px;
     }
-    
-
+    .Podcasts{
+display: none;
+    }
+     .footer{
+   background-image: url(./assets/Responsive-Footer.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   height: 250px ;
+  }
+  .features-showcase{
+    max-width: 1200px;
+  }
 
 }
-
-
-
 
