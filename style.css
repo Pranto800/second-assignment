@@ -558,4 +558,12 @@ button:hover{
   .text-why{
      font-size: 2rem;
   }
+  .video-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-dep{
+    width: 100%;
+  }
 }
